@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro projeto do curso</title>
+</head>
+
+<body>
+    
+    <h1>Título H1</h1>
+    
+    <!-- Parte básica de Títulos, parágrafos e quebras de linha -->
+    
+    <p>Parágrafo...</p>
+   
+    <p>
+        Teste 1 quebra de linhas <br>
+        Teste 2 quebra de linhas <br>
+        Teste 3 quebra de linhas
+    </p>
+
+    <br>
+    <hr>
+    <!-- Aula sobre imagens (internas/externas) em HTML -->
+    
+    <h1>Imagens</h1>
+    
+    <p>Imagem 1 "imagem1.webp"</p>
+    <img 
+    src="images/imagem1.webp" 
+    alt="imagem de um pássaro"
+    width="200"
+    height="200"
+    >
+
+    <p>Imagem 2 "imagem2.jpeg"</p>
+    <img 
+    src="images/imagem2.jpeg" 
+    alt="imagem de um pássaro"
+    width="200"
+    height="200"
+    >
+
+    <p>Imagem Aleatória (puxada por url)</p>
+    <img 
+    src="https://sujeitoprogramador.com/steve.png" 
+    alt="imagem do Steve Jobs"
+    width="200"
+    height="200"
+    >
+
+    <br>
+    <br>
+    <hr>
+    <!-- Aula sobre hierarquia de títulos -->
+
+    <h1>Exemplo de Títulos:</h1> <br>
+    <h1>Título 1 (h1)</h1>
+    <h2>Título 2 (h2)</h2>
+    <h3>Título 3 (h3)</h3>
+    <h4>Título 4 (h4)</h4>
+    <h5>Título 5 (h5)</h5>
+    <h6>Título 6 (h6)</h6>
+
+    <br>
+    <hr>
+    <!-- Aula sobre links e ancoras -->
+
+    <h1>Links (externos / internos) e Acoras</h1>
+    <h3>Links</h3>
+    <p>Acesse meu <a 
+        href="https://github.com/LucaCordella/curso-fullstack" target="_blank" rel="external">GitHub</a> </p>
+    <!-- href = link de onde você quer direcionar | target = abrir em outra aba | rel = informar que o link é um site externo (opcional)  -->
+
+    <h3>Outras páginas</h3>
+    <a href="pages/pag2.html">Página 2</a> <br>
+    <a href="pages/pag3.html">Página 3</a>
+
+    <br>
+    <hr>
+    <!-- Aula sobre listas -->
+
+    <h1>Trabalhando com listas</h1>
+    <!-- Podemos incluir type (tipo da ordem das listas) | start (para decidir em que número ou tipo a lista inicia) -->
+    <h3>Lista Ordenada</h3>
+    <ol type="1" start="3"> 
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <br>
+    <h3>Lista não Ordenada</h3>
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <br>
+    <h3>Mistura de listas</h3>
+    <ol>
+        <li>Item 1</li>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <li>Item 2</li>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <li>Item 3</li>
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+    </ol>
+    <br>
+    <hr>
+    <!-- Aula sobre tabelas -->
+
+    <!-- Tabela é composta de linhas que são compostas de celulas.
+    > <tr></tr> São linhas (são rows).
+    > <th></th> Define o cabeçalho de uma tabela.
+    > <td></td> Colocar nossos dados dentro da tabela.
+    -->
+
+    <h1>Trabalhando com Tabelas</h1>
+    
+    <table>
+        <caption>Tabela de Exemplo</caption>
+        <tr>
+            <th>Ordem</th>
+            <th>Serviços</th>
+            <th>Preços</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Troca de vidro</td>
+            <td>R$600</td>
+            <td>Em andamento</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Limpeza</td>
+            <td>R$150</td>
+            <td>Aguardando</td>
+        </tr>
+    </table>
+    
+    <br>
+    <hr>
+    <!-- Aula sobre formulários -->
+
+    <h1>Formulário</h1>
+    <form>
+        <label><strong>Faça o cadastro:</strong></label> <br><br>
+        <label for="pnome">Nome:</label>
+        <input type="text" id="pnome" name="pnome" placeholder="Digite seu nome" required> <br><br>
+
+        <label for="snome">Sobrenome:</label>
+        <input type="text" id="snome" name="snome" placeholder="Digite seu sobrenome" required> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="emial" name="email" id="email" placeholder="Digite seu email" required> <br><br>
+
+        <!-- Tipo DATE -->
+         <label for="nascimento">Data de nascimento</label>
+         <input type="date" name="nascimento" id="nascimento"> <br><br>
+
+        <!-- Tipo RADIO -->
+         <label><strong>Qual seu nível como programador atualmente?</strong></label> <br><br>
+         <label>
+            <input type="radio" name="nivel" value="iniciante" checked>Sou iniciante
+         </label> <br>
+         <label>
+            <input type="radio" name="nivel" value="medio">Comecei a pouco tempo
+         </label> <br>
+         <label>
+            <input type="radio" name="nivel" value="avancado">Sou avançado
+         </label> <br><br>
+
+        <!-- Tipo SELECT para selecionar itens -->
+         <label for="escolaridade">
+            <strong>Sua escolaridade:</strong>
+         </label>
+         <select id="escolaridade" required>
+            <option value="" selected disabled>Selecione</option>
+            <option>Educação Básica</option>
+            <option>Ensino Médio</option>
+            <option>Ensino Superior</option>
+            <option>Pós Graduação</option>
+         </select> <br><br>
+
+        <!-- Tipo Checkbox -->
+         <label>
+            <strong>Selecione as tecnologias que você conhece:</strong>
+         </label> <br>
+
+         <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Html">
+         <label for="tecnologia1">Html</label>
+
+         <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Css">
+         <label for="tecnologia2">Css</label>
+
+         <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Python">
+         <label for="tecnologia3">Python</label>
+
+         <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Java">
+         <label for="tecnologia4">Java</label> <br>
+
+        <br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <br>
+    <hr>
+    <!-- Aula sobre vídeos -->
+
+    <h1>Trabalhando com Vídeos</h1>
+
+    <!-- poster = thub do vídeo 
+    > Sem usar poster e colocar o autoplay é perfeito para sites onde o vídeo fica rodando
+    -->
+
+    <video poster="images/imagem1.webp" width="420" height="340" controls loop muted>
+        <source src="videos/barco.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    <hr>
+    <!-- Aula sobre vídeos -->
+
+    <h1>Trabalhando com Áudios</h1>
+    <!-- baixar o arquivo mp3 e incluir na pasta do projeto 
+    > Não baixei nenhum audio, mas se eu quiser eu só incluo no src
+    > tem as mesmas possíbilidades do vídeo: autoplay, loop...
+    -->
+
+    <audio controls>
+        <source src="" type="audio/mpeg">
+    </audio>
+
+</body>
+
+</html>
